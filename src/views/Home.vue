@@ -5,7 +5,7 @@
      <div class="intro">
        <div class="container-fluid">
          <div class="row">
-         <div class="col-md-6">
+         <div class="col-md-7">
           <div class="jumbotron">
               <h1 class="display-4">Just drive. <br> We'll do the rest.</h1>
               <p class="lead">All-inclusive, usage-based car subscriptions.</p>
@@ -18,8 +18,7 @@
               </form>
           </div>
          </div>
-        <div class="col-md-6">
-          <div class="cross"></div>
+        <div class="col-md-5">
         </div>
        </div>
        </div>
@@ -139,28 +138,28 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-3 text-center">
+        <div class="col-md-3 text-center text">
             <div class="rounded-cross">
             </div>
           <h4>Text us</h4>
           <p>Text when you want your car. No app needed, just an online account. Real human operators.</p>
           <hr>
         </div>
-        <div class="col-md-3 text-center">
+        <div class="col-md-3 text-center deliver">
           <div class="rounded-cross">
             </div>
           <h4>We deliver</h4>
           <p>Your car will arrive at your door - clean and fully fueled.</p>
           <hr>
         </div>
-        <div class="col-md-3 text-center">
+        <div class="col-md-3 text-center drive">
           <div class="rounded-cross">
             </div>
           <h4>You drive</h4>
           <p>Hope in and go with full coverage insurance, FasTrak, phone accessories, and unlimited mileage.</p>
           <hr>
         </div>
-        <div class="col-md-3 text-center">
+        <div class="col-md-3 text-center pick">
           <div class="rounded-cross">
             </div>
           <h4>We pick it up</h4>
@@ -455,7 +454,6 @@ p{
   color: #f6f5f8;
   display: inline-block;
   font-size: 20px;
-  border-radius: 100%;
   position: relative;
 }
 a:active, a:visited, a:hover, a:focus{
@@ -487,7 +485,7 @@ a:active, a:visited, a:hover, a:focus{
 .button {
   color: #f6f5f8;
   font-size: 12px;
-  background: #72738e;
+  background: #333456;
   border: none;
   padding: 15px 35px;
   border-radius: 50px;
@@ -501,6 +499,13 @@ a:active, a:visited, a:hover, a:focus{
   padding: 0px 70px 0 0;
   margin-right: 10px;
 }
+/*Intro */
+.intro .col-md-5:last-child{
+  background: url('../assets/just_drive.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /*They talk about us */
 .they-talk-about-us img{
   max-width: 100%;
@@ -508,45 +513,13 @@ a:active, a:visited, a:hover, a:focus{
 }
 /*cross */
 
-.cross:before, .cross:after {
-  position: absolute;
-  left: 300px;
-  top: 80px;
-  content: ' ';
-  height: 220px;
-  width: 1px;
-  background-color: #333456;
-}
-.cross:before {
-  transform: rotate(45deg);
-}
-.cross:after {
-  transform: rotate(-45deg);
-}
-
 .service-zone .cross-container .cross:before, .service-zone .cross-container .cross:after{
   left: 164px;
   top: 180px;
 }
 /*Rounded cross */
-.rounded-cross:before, .rounded-cross:after {
-  position: absolute;
-  left: 20px;
-  content: ' ';
-  top: 10px;
-  height: 20px;
-  z-index: 1000;
-  width: 1px;
-  background-color: #f6f5f8;
-}
-.rounded-cross:before {
-  transform: rotate(45deg);
-}
-.rounded-cross:after {
-  transform: rotate(-45deg);
-}
 
-.how-it-works .row:last-child .rounded-cross:before, .how-it-works .row:last-child .rounded-cross::after{
+.how-it-works .row:last-child .rounded-cross:before, .how-it-works .row:last-child .rounded-cross:after{
   left: 39px;
   top: 31px;
   background-color: #72738e;
@@ -565,8 +538,11 @@ a:active, a:visited, a:hover, a:focus{
   padding-left: 10px;
 }
 .about-us .cross-container{
-  background: #f6f5f8;
-  width: 330px;
+  background: url('../assets/client.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 380px;
   height: 480px;
   margin-left: 120px;
 }
@@ -580,10 +556,21 @@ a:active, a:visited, a:hover, a:focus{
   left: 150px;
 }
 .about-us .testimonial .rounded-cross{
+  background: url('../assets/client-profile.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 12px;
+  border-radius: 100%;
 }
 .about-us .testimonial .col-md-6{
   padding: 0 !important;
+}
+.about-us .col-md-6:last-child .rounded-cross{
+  background: url('../assets/add.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*How it works */
 .how-it-works{
@@ -599,14 +586,60 @@ a:active, a:visited, a:hover, a:focus{
 .how-it-works .col-md-4:first-child{
   padding-right: 150px;
 }
-.how-it-works .row:last-child .col-md-3{
+.how-it-works .row:last-child .text{
   padding: 0 28px;
 }
+.how-it-works .row:last-child .deliver{
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.how-it-works .row:last-child .pick{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .how-it-works .row:last-child .col-md-3:nth-child(2n){
-  padding: 30px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .how-it-works .row:last-child .col-md-3 h4{
   padding: 20px 0;
+}
+.how-it-works .col-md-4:nth-child(2n) .rounded-cross{
+  background: url('../assets/purse.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.how-it-works .col-md-4:last-child .rounded-cross{
+  background: url('../assets/help.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.how-it-works .row:last-child .text .rounded-cross{
+  background: url('../assets/message.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.how-it-works .row:last-child .deliver .rounded-cross{
+  background: url('../assets/car.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.how-it-works .row:last-child .drive .rounded-cross{
+  background: url('../assets/drive.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.how-it-works .row:last-child .pick .rounded-cross{
+  background: url('../assets/pick.png');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /* Service zone*/
 .service-zone{
@@ -628,13 +661,22 @@ a:active, a:visited, a:hover, a:focus{
   color: white;
 }
 .service-zone .cross-container {
-  background: #72738e;
-    width: 330px;
-    height: 569px;
-    z-index: 1;
-    margin-left: 140px;
-    left: 100px;
-    position: relative;
+  background: url('../assets/san-fransisco.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 370px;
+  height: 569px;
+  z-index: 1;
+  margin-left: 100px;
+  left: 100px;
+  position: relative;
+}
+.service-zone .rounded-cross{
+  background: url('../assets/location.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*Pricing */
 .pricing{
@@ -655,6 +697,7 @@ a:active, a:visited, a:hover, a:focus{
 }
 .pricing .row:last-child .col-md-4 .card .price{
   margin-bottom: 40px;
+  color: #5a5c8e;
 }
 .pricing .row:last-child .col-md-4 .card .description{
   margin-top: 40px;
@@ -667,7 +710,7 @@ a:active, a:visited, a:hover, a:focus{
   margin-top: 15px;
   font-size: 14px;
   font-weight: bold;
-  color: #72738e;
+  color: #5a5c8e;
 }
 .recommended-title{
   display: inline-block;
@@ -686,7 +729,7 @@ a:active, a:visited, a:hover, a:focus{
 }
 .pricing .row:last-child .recommended{
   border: none;
-  border-top: 2px solid #72738e;
+  border-top: 2px solid #5a5c8e;
   border-radius: 0px;
   background-color: #ffffff;
 }
@@ -700,44 +743,39 @@ a:active, a:visited, a:hover, a:focus{
   padding-right: 210px;
 }
 .the-car .cross-container:first-child{
-  background: #72738e;
+  background: url('../assets/toyota.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 400px;
   height: 400px;
   position: absolute;
   top: -150px;
 }
 .the-car .cross-container:nth-child(2n){
-  background: #72738e;
-  width: 200px;
+  background: url('../assets/bicycle.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 220px;
   height: 250px;
   position: absolute;
   top: 263px;
 }
 
 .the-car .cross-container:last-child{
-  background: #72738e;
+  background: url('../assets/phone_mount.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 300px;
   height: 200px;
   position: absolute;
   top: 263px;
   left: 250px;
 }
-.the-car .cross-container .cross:before, .the-car .cross-container .cross:after{
-  height: 120px;
-  background: #f6f5f8;
-} 
-.the-car .cross-container:first-child .cross:before, .the-car .cross-container:first-child .cross:after{
-  left: 200px;
-  top: 150px;
-} 
-.the-car .cross-container:nth-child(2n) .cross:before, .the-car .cross-container:nth-child(2n) .cross:after{
-  left: 110px;
-  top: 70px;
-} 
-.the-car .cross-container:last-child .cross:before, .the-car .cross-container:last-child .cross:after{
-  left: 150px;
-  top: 50px;
-} 
+
+
 /*Action */
 .action{
   background: #f6f5f8;
@@ -764,7 +802,7 @@ a:active, a:visited, a:hover, a:focus{
 .footer .col-md-3 ul li{
   margin-top: 15px;
 }
-.footer .col-md-3 ul li a, .footer .col-md-3 ul li a:active, .footer .col-md-3 ul li a:visited{
+.footer .col-md-3 ul li a, .footer .col-md-3 ul li a:active, .footer .col-md-3 ul li a:visited, .footer p{
   color: #333456;
 }
 .footer .submit{
@@ -773,7 +811,7 @@ a:active, a:visited, a:hover, a:focus{
   right: 20px;
   width: 40px;
   height: 40px;
-  background-color: #72738e;
+  background-color: #333456;
   border-radius: 50%;
   border: none;
   color: white;

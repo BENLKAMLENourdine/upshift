@@ -10,10 +10,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item current mx-5">
-                        <a class="nav-link active" href="#"><span class="circle"></span> Personal <span class="sr-only">(current)</span></a>
+                        <a class="nav-link active" href="#"><i class="fas fa-user icon"></i>Personal <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#"><span class="circle"></span> Business</a>
+                        <a class="nav-link" href="#"><i class="fas fa-briefcase icon"></i>Business</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav mr-auto">
@@ -49,34 +49,38 @@
 
 <style>
 .navbar{
-    background: #f6f5f8 !important;
-    color: #74758f !important;
+    background: #ffffff !important;
+    color: #4d5361 !important;
     padding-top: 0px !important;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .navbar ul li.current{
-    border-top: 2px solid #74758f;
+    border-top: 2px solid #333456;
+    color: #333456 !important;
+}
+.navbar ul li.current a:active, .navbar ul li.current a:visited{
+    color: #333456 !important;
 }
 .navbar-brand{
     font-weight: bold;
     color: #74758f !important;
 }
-.circle{
-    width: 15px;
-    height: 15px;
-    border-radius: 50px;
-    background: #e6e8ea;
-    display: inline-block;
+.icon{
     position: relative;
-    top: 2px;
-    right: 8px;
+    right: 10px;
 }
 .join{
     margin-top: 2px;
-    color: #f6f5f8;
-    background: #e6e8ea;
-    border: none;
-    padding: 2px 25px;
+    color: #333456;
+    background: transparent;
+    border: 2px solid rgba(51, 52, 86, 0.3);
+    padding: 0 25px;
     border-radius: 50px;
+}
+
+.join li .nav-link:active, .join li .nav-link:visited, .join li .nav-link{
+    color: #333456 !important;
 }
 </style>
