@@ -27,23 +27,23 @@
     <div class="they-talk-about-us">
         <div class="row">
         <div class="col-md-2 company insider">
-          <img src="../assets/business-insider.png" alt="">
+          <img src="../assets/business-insider-1.svg" alt="">
         </div>
         <div class="col-md-2 company">
-          <img src="../assets/wired.png" alt="">
+          <img src="../assets/Wired_logo.svg" alt="">
         </div>
         <div class="col-md-2 company">
-          <img src="../assets/urban-x.png" alt="">
+          <img src="../assets/urbanxlogo.png" alt="">
         </div>
-        <div class="col-md-2 company">
-          <img src="../assets/metropolis.png" alt="">
+        <div class="col-md-2 company metro">
+          <img src="../assets/metropolis.svg" alt="">
         </div>
-        <div class="col-md-2 company">
-          <img src="../assets/curbed.png" alt="">
+        <div class="col-md-2 company curbed">
+          <img src="../assets/Curbed_logo.svg" alt="">
         </div>
         <div class="col-md-2 company arrow-down">
           <a href="">
-            <i class="fas fa-arrow-down"></i>
+            <i class="fas fa-arrow-down fa-2x"></i>
           </a>
         </div>
       </div>
@@ -56,7 +56,7 @@
             <div class="cross">
             </div>
           </div>
-          <div class="testimonial">
+          <div class="testimonial shadow">
             <p class="description">"Since becoming a monthly subscriber. I feel like I have my car back again. It's like I own a car without the worries or cost of keeping it around all the time."</p>
             <div class="container">
               <div class="row">
@@ -73,7 +73,7 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                 </div>
-                <p>28 review at Yelp</p>
+                <p class="review">28 review at Yelp</p>
               </div>
             </div>
             </div>
@@ -108,6 +108,8 @@
           <p class="section-title"><span>02</span><span class="line"></span><span class="title">HOW IT WORKS</span></p>
           <h2>Simple and handy rental process</h2>
         </div>
+
+
         <div class="col-md-4">
           <p>Snow chains, surf board rack, key lock box, or dog car seat hammock available upon request.</p>
           <hr>
@@ -122,6 +124,8 @@
             </div>
           </div>
         </div>
+
+        
         <div class="col-md-4">
           <p>Still got questions? We've probably covered them all in the Help Center.</p>
           <hr>
@@ -174,7 +178,7 @@
       <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
-              <div class="cross-container">
+              <div class="cross-container shadow">
                 <div class="cross">
                 </div>
               </div>
@@ -287,13 +291,13 @@
             <p>Fits 5 comfortably - or a surfboard, bicycle, or skiis. 54 MPG hybrid gets you to Tahoe and back on a single tank. Phone mount, charging cables, and FasTrak included. Bluetooth and safety technology like adaptive cruise control. We use all natural deodorizers and cleaning supplies.</p>
           </div>
           <div class="col-md-6">
-            <div class="cross-container">
+            <div class="cross-container shadow">
               <div class="cross"></div>
             </div>
-            <div class="cross-container">
+            <div class="cross-container shadow">
               <div class="cross"></div>
             </div>
-            <div class="cross-container">
+            <div class="cross-container shadow">
               <div class="cross"></div>
             </div>
           </div>
@@ -313,7 +317,6 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <hr>
           </div>
         </div>
       </div>
@@ -363,7 +366,7 @@
           <div class="col-md-6">
             <div class="row">
               <div class="col-md-6">
-                <img src="../assets/output-onlinepngtools.png" alt="">
+                <img src="../assets/logo-white.svg" alt="">
               </div>
               <div class="col-md-6">
                 <p>Copyright © 2019 Upshift, Inc.</p>
@@ -404,30 +407,47 @@ html, body{
 }
 .section-title{
   font-size: 11px;
+  color: #7a4ead;
   font-weight: bold;
 }
 .author{
   margin-left: 8px;
+  color: #333333;
+}
+.review {
+  color: #333333;
+}
+.pricing .card:hover{
+  box-shadow: 0 1rem 1rem rgba(0,0,0,.15) !important;
 }
 .line{
   display: inline-block;
-  border: 1px solid #ebebee;
+  border: 1px solid #7a4ead;
   width: 50px;
   position: relative;
   top: -3px;
   margin: 0px 10px;
 }
 .jumbotron, .intro, .arrow-down{
-  background: #f6f5f8;
+  background: #ffffff;
+}
+.arrow-down i {
+  color: #7a4ead;
+}
+.metro{
+  padding: 0px !important;
+}
+.curbed{
+  padding: 30px !important;
 }
 h1, h2, h3{
-  color: #333456;
+  color: #333333;
 }
 .fa-check{
-  color: #72738e;
+  color: #7a4ead;
 }
 p{
-  color: #72738e;
+  color: #cdcdd7;
 }
 .display-4{
   font-weight: 400 !important;
@@ -438,13 +458,14 @@ p{
 }
 #email{
   padding: 15px 0px 15px 30px;
-  background: #e6e8ea;
-  border: none;
+  background: #ffffff;
+  color: #cdcdd7;
   border-radius: 50px;
+  border: 2px solid #f1f1f1;
   width: 100%;
 }
 .company{
-  padding: 30px 0 0 0;
+  padding: 40px 0 0 0;
   color: #72738e;
 }
 .rounded-cross{
@@ -457,7 +478,7 @@ p{
   position: relative;
 }
 a:active, a:visited, a:hover, a:focus{
-  color: #333456;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -465,7 +486,7 @@ a:active, a:visited, a:hover, a:focus{
   margin-top: 25px !important;
 }
 .service-zone a:active, .service-zone a:visited{
-  color: #ebebee;
+  color: #333333;
 }
 .how-it-works .row:last-child .rounded-cross{
   width: 80px;
@@ -483,21 +504,32 @@ a:active, a:visited, a:hover, a:focus{
   font-size: 35px;
 }
 .button {
-  color: #f6f5f8;
-  font-size: 12px;
-  background: #333456;
+  color: #ffffff;
+  font-size: 17px;
+  background: #7a4ead;
   border: none;
-  padding: 15px 35px;
-  border-radius: 50px;
+  padding: 10px 35px;
+  border-radius: 4px;
 }
 #phoneNumber{
   background: transparent;
   border: none;
-  border-bottom: 1px solid #e6e8ea;
-  color: #e6e8ea;
+  border-bottom: 1px solid #cdcdd7;
+  color: #cdcdd7;
   border-radius: 0px;
   padding: 0px 70px 0 0;
+  outline: none;
+  font-size: 18px;
   margin-right: 10px;
+}
+#phoneNumber:focus{
+  outline: none;
+}
+input:focus{
+  outline: none;
+}
+#phoneNumber::placeholder{
+  color: #cdcdd7;
 }
 /*Intro */
 .intro .col-md-5:last-child{
@@ -506,9 +538,13 @@ a:active, a:visited, a:hover, a:focus{
   background-repeat: no-repeat;
   background-size: cover;
 }
+.intro .col-md-5{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
 /*They talk about us */
 .they-talk-about-us img{
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 /*cross */
@@ -516,6 +552,11 @@ a:active, a:visited, a:hover, a:focus{
 .service-zone .cross-container .cross:before, .service-zone .cross-container .cross:after{
   left: 164px;
   top: 180px;
+}
+.service-zone .cross-container{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 /*Rounded cross */
 
@@ -526,15 +567,15 @@ a:active, a:visited, a:hover, a:focus{
 }
 /*about us */
 .about-us{
-  margin: 40px 0;
+  margin: 40px 0 0 0;
 }
 .about-us .row .col-md-6:last-child{
   padding-right: 225px;
   padding-top: 70px;
 }
 .about-us .description{
-  color: #ebebee;
-  border-left: 2px solid #ebebee;
+  color: #cdcdd7;
+  border-left: 2px solid #cdcdd7;
   padding-left: 10px;
 }
 .about-us .cross-container{
@@ -547,13 +588,14 @@ a:active, a:visited, a:hover, a:focus{
   margin-left: 120px;
 }
 .about-us .testimonial{
-  background: #333456;
+  background: #ffffff;
   color: white !important;
   width: 400px;
   padding: 30px 25px;
   position: relative;
   bottom: 140px;
   left: 150px;
+  border-top-left-radius: 15px;
 }
 .about-us .testimonial .rounded-cross{
   background: url('../assets/client-profile.jpg');
@@ -572,10 +614,20 @@ a:active, a:visited, a:hover, a:focus{
   background-repeat: no-repeat;
   background-size: cover;
 }
+.fa-star {
+  color: #ff6108;
+  font-size: 12px;
+}
+
+.fa-arrow-right {
+  color: #7a4ead;
+}
 /*How it works */
 .how-it-works{
   margin-bottom: 80px;
-  background-color: #fdfdfd;
+  background: #f8fcff;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .how-it-works .row:first-child{
   margin-bottom: 100px;
@@ -605,6 +657,7 @@ a:active, a:visited, a:hover, a:focus{
 .how-it-works .row:last-child .col-md-3 h4{
   padding: 20px 0;
 }
+
 .how-it-works .col-md-4:nth-child(2n) .rounded-cross{
   background: url('../assets/purse.png');
   background-position: center;
@@ -644,10 +697,8 @@ a:active, a:visited, a:hover, a:focus{
 /* Service zone*/
 .service-zone{
   padding: 50px 0;
-  background-color: #fdfdfd;
 }
 .service-zone .card-box{
-  background: #333456;
   width: 550px;
   padding: 50px 70px 50px 121px;
   text-align: left;
@@ -655,10 +706,17 @@ a:active, a:visited, a:hover, a:focus{
   z-index: 0;
   left: 507px;
   top: 47px;
-  color: #feffff;
+  border: solid 2px #cdcdd7;
+  border-radius: 10px;
+}
+.service-zone p{
+  color: #cdcdd7 !important;
+}
+.service-zone .section-title{
+  color: #7a4ead !important;
 }
 .service-zone .card-box h3{
-  color: white;
+  color: #333333;
 }
 .service-zone .cross-container {
   background: url('../assets/san-fransisco.jpg');
@@ -673,15 +731,20 @@ a:active, a:visited, a:hover, a:focus{
   position: relative;
 }
 .service-zone .rounded-cross{
-  background: url('../assets/location.png');
+  background: url('../assets/map.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.service-zone .media:last-child .media-body p{
+  color: #333333 !important;
+}
+.service-zone .media .media-body h6{
+  color: #7a4ead !important;
+}
 /*Pricing */
 .pricing{
   padding: 40px 0;
-  background-color: #fdfdfd;
   margin-top: 60px;
 }
 .pricing .row:first-child .col-md-12{
@@ -697,7 +760,7 @@ a:active, a:visited, a:hover, a:focus{
 }
 .pricing .row:last-child .col-md-4 .card .price{
   margin-bottom: 40px;
-  color: #5a5c8e;
+  color: #7a4ead;
 }
 .pricing .row:last-child .col-md-4 .card .description{
   margin-top: 40px;
@@ -710,7 +773,7 @@ a:active, a:visited, a:hover, a:focus{
   margin-top: 15px;
   font-size: 14px;
   font-weight: bold;
-  color: #5a5c8e;
+  color: #7a4ead;
 }
 .recommended-title{
   display: inline-block;
@@ -718,7 +781,7 @@ a:active, a:visited, a:hover, a:focus{
 }
 
 .pricing .row:last-child .col-md-4 .card .details a:active, .pricing .row:last-child .col-md-4 .card .details a:visited{
-    color: #333456;
+    color: #333333;
 }
 
 .pricing .row:last-child .col-md-4:first-child, .pricing .row:last-child .col-md-4:last-child{
@@ -729,15 +792,18 @@ a:active, a:visited, a:hover, a:focus{
 }
 .pricing .row:last-child .recommended{
   border: none;
-  border-top: 2px solid #5a5c8e;
+  border-top: 2px solid #7a4ead;
   border-radius: 0px;
   background-color: #ffffff;
 }
 /*The car */
 .the-car{
-  background: #f6f5f8;
+  background: #f8fcff;
   margin-top: 150px;
   padding: 80px 0;
+}
+.the-car .cross-container{
+  border-radius: 5px;
 }
 .the-car .col-md-6:first-child{
   padding-right: 210px;
@@ -778,8 +844,8 @@ a:active, a:visited, a:hover, a:focus{
 
 /*Action */
 .action{
-  background: #f6f5f8;
-  padding: 200px 0 70px 0;
+  background: #f8fcff;
+  padding: 200px 0 35px 0;
 }
 .action .col-md-6:first-child{
   padding-right: 100px;
@@ -792,44 +858,50 @@ a:active, a:visited, a:hover, a:focus{
 
 /*footer*/
 .footer{
-  background: #f6f5f8;
+  padding-top: 35px;
+  background: #ffffff;
 }
 .footer .col-md-3 ul li:first-child{
-  font-weight: bold;
-  font-size: 13px;
-  color: #72738e;
+  font-size: 15px;
+  color: #333333;
 }
 .footer .col-md-3 ul li{
   margin-top: 15px;
 }
 .footer .col-md-3 ul li a, .footer .col-md-3 ul li a:active, .footer .col-md-3 ul li a:visited, .footer p{
-  color: #333456;
+  color: #cdcdd7;
 }
 .footer .submit{
   position: absolute;
-  top: 58%;
+  top: 59%;
   right: 20px;
-  width: 40px;
-  height: 40px;
-  background-color: #333456;
+  width: 45px;
+  height: 45px;
+  background-color: #7a4ead;
   border-radius: 50%;
   border: none;
   color: white;
   cursor: pointer;
 }
 .footer .list-group li{
-  width: 30px;
-  height: 30px;
-  background-color: #e6e8ea;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
   border-radius: 50%;
-  color: #72738e;
-  padding-left: 8px;
-  padding-top: 2px;
+  padding-left: 12px;
+  border: 2px solid #f1f1f1;
+  padding-top: 6px;
   display: inline-block;
   margin-right: 20px;
 }
-.footer .list-group li a:active, .footer .list-group li a:visited{
-    color: #72738e;
+.footer .list-group li:first-child a, .footer .list-group li:first-child a:active, .footer .list-group li:first-child a:visited{
+    color: #3b5998;
+}
+.footer .list-group li:nth-child(2n) a, .footer .list-group li:nth-child(2n) a:active, .footer .list-group li:nth-child(2n) a:visited{
+    color: #00acee;
+}
+.footer .list-group li:last-child a, .footer .list-group li:last-child a:active, .footer .list-group li:last-child a:visited{
+    color: #c41200;
 }
 .footer .row:last-child .col-md-6{
   margin-top: 30px;

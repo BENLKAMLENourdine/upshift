@@ -2,7 +2,7 @@
     <div class="navbar">
         <div class="col-md-12">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="../assets/output-onlinepngtools.png" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="../assets/logo-white.svg" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -50,18 +50,23 @@
 <style>
 .navbar{
     background: #ffffff !important;
-    color: #4d5361 !important;
-    padding-top: 0px !important;
-    font-weight: bold;
-    font-size: 14px;
+    color: #cdcdd7 !important;
+    padding-top: 5px !important;
+    font-size: 16px;
 }
-
+.navbar ul li a{
+    color: #cdcdd7 !important;
+}
+.navbar ul li a:hover{
+    color: #7a4ead !important;
+}
 .navbar ul li.current{
-    border-top: 2px solid #333456;
-    color: #333456 !important;
+    border-top: 4px solid #7a4ead;
+    border-radius: 2px;
+    color: #7a4ead !important;
 }
-.navbar ul li.current a:active, .navbar ul li.current a:visited{
-    color: #333456 !important;
+.navbar ul li.current a, .navbar ul li.current a:active, .navbar ul li.current a:visited{
+    color: #7a4ead !important;
 }
 .navbar-brand{
     font-weight: bold;
@@ -73,14 +78,17 @@
 }
 .join{
     margin-top: 2px;
-    color: #333456;
+    color: #7a4ead !important;
     background: transparent;
-    border: 2px solid rgba(51, 52, 86, 0.3);
+    border: 1px solid #cdcdd7;
     padding: 0 25px;
-    border-radius: 50px;
+    border-radius: 5px;
 }
 
-.join li .nav-link:active, .join li .nav-link:visited, .join li .nav-link{
-    color: #333456 !important;
+.join a:active, .join a:visited, .join a{
+    color: #7a4ead !important;
+}
+.navbar ul li.join a{
+    color: #7a4ead !important;
 }
 </style>
